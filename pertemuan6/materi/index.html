@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      ul {
+        list-style-type: none;
+      }
+      ol li {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button>menu</button>
+      <div class="dropdown-content">
+        <ul>
+          <li>list submenu</li>
+          <li>list submenu</li>
+          <li>list submenu</li>
+        </ul>
+        <ol>
+          <li>menu 1</li>
+          <li>menu 2</li>
+          <li>menu 3</li>
+        </ol>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <label for="country">Select your country</label><br />
+    <select name="country" id="country">
+      <option value="idn">Indonesia</option>
+      <option value="jpn">Japan</option>
+      <option value="mya">Malaysia</option>
+    </select>
+
+    <label for="name">Name :</label>
+    <input id="name" type="text" placeholder="input disini....." />
+    <p>Please select your favorite Web language:</p>
+      <input type="radio" id="html" name="fav_language" value="HTML" />  
+    <label for="html">HTML</label><br />
+      <input type="radio" id="css" name="fav_language" value="CSS" />  
+    <label for="css">CSS</label><br />
+     
+    <input
+      type="radio"
+      id="javascript"
+      name="fav_language"
+      value="JavaScript"
+    />
+      <label for="javascript">JavaScript</label><br />
+    <p>Please select vechile:</p>
+    <br />
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+    <label for="vehicle1"> I have a bike</label><br />
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+    <label for="vehicle2"> I have a car</label><br />
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+    <label for="vehicle3"> I have a boat</label><br />
+  </body>
+</html>
